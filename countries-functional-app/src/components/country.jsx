@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import { loader } from 'graphql.macro';
 import { Query } from "react-apollo";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
+import { MoreInfo } from './moreInfo';
+
 
 const FEED_QUERY_COUNTRY = loader('../graphql/country.graphql');
 
@@ -22,6 +30,14 @@ const ExpandedCountryInfo = ({data}) => {
       		})
       	}
     	</h4>
+
+      <Router>
+        <Link to={data.name}>Click to see more info</Link>
+        
+          <Route path='/' component={MoreInfo} />
+        
+      </Router>
+
     </div>
   );
 }
@@ -74,3 +90,4 @@ export const Country = ({value, id}) => {
 			</li>
 		);
 }
+

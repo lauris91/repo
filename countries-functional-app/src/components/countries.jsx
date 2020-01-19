@@ -15,6 +15,7 @@ export const Countries = () => {
           if(error) return <div className="error">Error getting data! See logs for more info!</div>
 
           const countriesArr = data.countries;
+          //VIETA, KUR TIEK IEGŪTS SARAKSTS AR VALSTĪM
           return(
             <ul>
               {countriesArr.map(country => <Country key={country.code} id={country.code} value={country.name}/>)}

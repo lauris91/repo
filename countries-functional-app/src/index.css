@@ -66,3 +66,9 @@ li{
 	display: inline-block;
 	margin: 5px;
 }
+
+.expandableCountryInfo a{
+	display: block;
+	text-decoration: none;
+	margin-left: 5px;
+}
