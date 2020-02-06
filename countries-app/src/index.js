@@ -44,45 +44,41 @@ class ExpandableCountryInfo extends React.Component{
 }
 
 class BasicCountryInfo extends React.Component{
-  	constructor() {
-    	super();
-    	this.state = { 
-    		expand: false 
-    	};
-  	}
+  constructor() {
+  	super();
+  	this.state = {
+  		expand: false
+  	};
+  }
 
-  	clickHandle(){
-  		console.log('sfsd')
-		let showExpand = this.state.expand === false ? true : false
-		this.setState({expand: showExpand})
+  clickHandle(){
+	   let showExpand = this.state.expand === false ? true : false
+		 this.setState({expand: showExpand})
 
 	}
 
-  	renderExpandableCountryInfo(expand, code) {
+  renderExpandableCountryInfo(expand, code) {
 		if(expand === true){
 			return <ExpandableCountryInfo countryCode={code} />
 		} else {
 			return null
 		}
-		
 	}
 
 	render(){
 		return(
-			 <div  
+			 <div
 			 	className="basicCountryInfo"
 			 	onClick={() => this.clickHandle()}
 			 >
 			 	<h1>{this.props.value} <span>({this.props.id})</span></h1>
 			 	{this.renderExpandableCountryInfo(this.state.expand, this.props.id)}
 			</div>
-
-		);
+    );
 	}
 }
 
 class Country extends React.Component{
-	
 	render(){
 		return(
 			<li>
@@ -96,14 +92,13 @@ class Country extends React.Component{
 }
 
 class CountriesList extends React.Component{
-
 	render(){
 		return (
 	      <Query query={FEED_QUERY_COUNTRIES}>
 	        {({ loading, error, data }) => {
 	          if (loading) return <div className="loading">Loading...</div>
 	          if (error) return <div className="error">Error getting data! See logs for more info!</div>
-		    	
+
 	          	const countriesArr = data.countries;
 
 		    	return (
@@ -121,11 +116,11 @@ class AppLayout extends React.Component{
 	render(){
 		return(
 			<ApolloProvider client={client}>
-				<div className="countriesList"> 
+				<div className="countriesList">
 					<CountriesList />
 				</div>
 			</ApolloProvider>
-		) 
+		)
 	}
 }
 

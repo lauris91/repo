@@ -6,7 +6,7 @@ class UserOutput extends Component{
 		return(
 			<div className="userOutput">
 				<p>paragrāfs 1</p>
-				<p>{this.props.children}</p>
+				<p>{this.props.value}</p>
 				<UserInput changed={this.props.changed}/>
 			</div>
 		)
