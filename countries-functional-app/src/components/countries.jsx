@@ -8,6 +8,7 @@ const FEED_QUERY_COUNTRIES = loader('../graphql/countries.graphql')
 
 export const Countries = () => {
   return(
+    
     <Query query={FEED_QUERY_COUNTRIES}>
       {
         ({loading, error, data}) => {
