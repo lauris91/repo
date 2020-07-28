@@ -1,0 +1,183 @@
+[1mdiff --git a/first-udemy-assigment/.gitignore b/first-udemy-assigment/.gitignore[m
+[1mdeleted file mode 100644[m
+[1mindex 4d29575..0000000[m
+[1m--- a/first-udemy-assigment/.gitignore[m
+[1m+++ /dev/null[m
+[36m@@ -1,23 +0,0 @@[m
+[31m-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.[m
+[31m-[m
+[31m-# dependencies[m
+[31m-/node_modules[m
+[31m-/.pnp[m
+[31m-.pnp.js[m
+[31m-[m
+[31m-# testing[m
+[31m-/coverage[m
+[31m-[m
+[31m-# production[m
+[31m-/build[m
+[31m-[m
+[31m-# misc[m
+[31m-.DS_Store[m
+[31m-.env.local[m
+[31m-.env.development.local[m
+[31m-.env.test.local[m
+[31m-.env.production.local[m
+[31m-[m
+[31m-npm-debug.log*[m
+[31m-yarn-debug.log*[m
+[31m-yarn-error.log*[m
+[1mdiff --git a/first-udemy-assigment/README.md b/first-udemy-assigment/README.md[m
+[1mdeleted file mode 100644[m
+[1mindex 859d27a..0000000[m
+[1m--- a/first-udemy-assigment/README.md[m
+[1m+++ /dev/null[m
+[36m@@ -1,68 +0,0 @@[m
+[31m-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).[m
+[31m-[m
+[31m-## Available Scripts[m
+[31m-[m
+[31m-In the project directory, you can run:[m
+[31m-[m
+[31m-### `npm start`[m
+[31m-[m
+[31m-Runs the app in the development mode.<br />[m
+[31m-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.[m
+[31m-[m
+[31m-The page will reload if you make edits.<br />[m
+[31m-You will also see any lint errors in the console.[m
+[31m-[m
+[31m-### `npm test`[m
+[31m-[m
+[31m-Launches the test runner in the interactive watch mode.<br />[m
+[31m-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.[m
+[31m-[m
+[31m-### `npm run build`[m
+[31m-[m
+[31m-Builds the app for production to the `build` folder.<br />[m
+[31m-It correctly bundles React in production mode and optimizes the build for the best performance.[m
+[31m-[m
+[31m-The build is minified and the filenames include the hashes.<br />[m
+[31m-Your app is ready to be deployed![m
+[31m-[m
+[31m-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.[m
+[31m-[m
+[31m-### `npm run eject`[m
+[31m-[m
+[31m-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**[m
+[31m-[m
+[31m-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.[m
+[31m-[m
+[31m-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.[m
+[31m-[m
+[31m-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.[m
+[31m-[m
+[31m-## Learn More[m
+[31m-[m
+[31m-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).[m
+[31m-[m
+[31m-To learn React, check out the [React documentation](https://reactjs.org/).[m
+[31m-[m
+[31m-### Code Splitting[m
+[31m-[m
+[31m-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting[m
+[31m-[m
+[31m-### Analyzing the Bundle Size[m
+[31m-[m
+[31m-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size[m
+[31m-[m
+[31m-### Making a Progressive Web App[m
+[31m-[m
+[31m-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app[m
+[31m-[m
+[31m-### Advanced Configuration[m
+[31m-[m
+[31m-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration[m
+[31m-[m
+[31m-### Deployment[m
+[31m-[m
+[31m-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment[m
+[31m-[m
+[31m-### `npm run build` fails to minify[m
+[31m-[m
+[31m-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify[m
+[1mdiff --git a/first-udemy-assigment/package-lock.json b/first-udemy-assigment/package-lock.json[m
+[1mdeleted file mode 100644[m
+[1mindex 282ae88..0000000[m
+[1m--- a/first-udemy-assigment/package-lock.json[m
+[1m+++ /dev/null[m
+[36m@@ -1,14548 +0,0 @@[m
+[31m-{[m
+[31m-  "name": "first-udemy-assigment",[m
+[31m-  "version": "0.1.0",[m
+[31m-  "lockfileVersion": 1,[m
+[31m-  "requires": true,[m
+[31m-  "dependencies": {[m
+[31m-    "@babel/code-frame": {[m
+[31m-      "version": "7.8.3",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.8.3.tgz",[m
+[31m-      "integrity": "sha512-a9gxpmdXtZEInkCSHUJDLHZVBgb1QS0jhss4cPP93EW7s+uC5bikET2twEF3KV+7rDblJcmNvTR7VJejqd2C2g==",[m
+[31m-      "requires": {[m
+[31m-        "@babel/highlight": "^7.8.3"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "@babel/compat-data": {[m
+[31m-      "version": "7.8.5",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.8.5.tgz",[m
+[31m-      "integrity": "sha512-jWYUqQX/ObOhG1UiEkbH5SANsE/8oKXiQWjj7p7xgj9Zmnt//aUvyz4dBkK0HNsS8/cbyC5NmmH87VekW+mXFg==",[m
+[31m-      "requires": {[m
+[31m-        "browserslist": "^4.8.5",[m
+[31m-        "invariant": "^2.2.4",[m
+[31m-        "semver": "^5.5.0"[m
+[31m-      },[m
+[31m-      "dependencies": {[m
+[31m-        "semver": {[m
+[31m-          "version": "5.7.1",[m
+[31m-          "resolved": "https://registry.npmjs.org/semver/-/semver-5.7.1.tgz",[m
+[31m-          "integrity": "sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ=="[m
+[31m-        }[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "@babel/core": {[m
+[31m-      "version": "7.8.4",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/core/-/core-7.8.4.tgz",[m
+[31m-      "integrity": "sha512-0LiLrB2PwrVI+a2/IEskBopDYSd8BCb3rOvH7D5tzoWd696TBEduBvuLVm4Nx6rltrLZqvI3MCalB2K2aVzQjA==",[m
+[31m-      "requires": {[m
+[31m-        "@babel/code-frame": "^7.8.3",[m
+[31m-        "@babel/generator": "^7.8.4",[m
+[31m-        "@babel/helpers": "^7.8.4",[m
+[31m-        "@babel/parser": "^7.8.4",[m
+[31m-        "@babel/template": "^7.8.3",[m
+[31m-        "@babel/traverse": "^7.8.4",[m
+[31m-        "@babel/types": "^7.8.3",[m
+[31m-        "convert-source-map": "^1.7.0",[m
+[31m-        "debug": "^4.1.0",[m
+[31m-        "gensync": "^1.0.0-beta.1",[m
+[31m-        "json5": "^2.1.0",[m
+[31m-        "lodash": "^4.17.13",[m
+[31m-        "resolve": "^1.3.2",[m
+[31m-        "semver": "^5.4.1",[m
+[31m-        "source-map": "^0.5.0"[m
+[31m-      },[m
+[31m-      "dependencies": {[m
+[31m-        "semver": {[m
+[31m-          "version": "5.7.1",[m
+[31m-          "resolved": "https://registry.npmjs.org/semver/-/semver-5.7.1.tgz",[m
+[31m-          "integrity": "sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ=="[m
+[31m-        }[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "@babel/generator": {[m
+[31m-      "version": "7.8.4",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/generator/-/generator-7.8.4.tgz",[m
+[31m-      "integrity": "sha512-PwhclGdRpNAf3IxZb0YVuITPZmmrXz9zf6fH8lT4XbrmfQKr6ryBzhv593P5C6poJRciFCL/eHGW2NuGrgEyxA==",[m
+[31m-      "requires": {[m
+[31m-        "@babel/types": "^7.8.3",[m
+[31m-        "jsesc": "^2.5.1",[m
+[31m-        "lodash": "^4.17.13",[m
+[31m-        "source-map": "^0.5.0"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    "@babel/helper-annotate-as-pure": {[m
+[31m-      "version": "7.8.3",[m
+[31m-      "resolved": "https://registry.npmjs.org/@babel/helper-annotate-as-
